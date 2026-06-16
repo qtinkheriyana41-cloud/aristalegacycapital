@@ -70,18 +70,12 @@ html, body {
 }
 
 .nav-brand {
-    font-family:'EB Garamond', Georgia, serif;
-    font-size:15px;
-    font-weight:400;
-    letter-spacing:0.04em;
-    color:rgba(255,255,255,0.88);
-    cursor:pointer;
-}
-
-.nav-brand img{
-    height: 150px;
-    width: auto;
-    display: block;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: rgba(255,255,255,0.88);
+  cursor: pointer;
 }
 
 .nav-links {
@@ -333,22 +327,19 @@ body {
 
 <!-- NAV -->
 <div class="nav">
+  <div class="nav-brand" onclick="scrollToSection('thesis')">Arista Legacy Capital</div>
+  <div class="nav-links">
+    <div onclick="scrollToSection('thesis')">Thesis</div>
+    <div onclick="scrollToSection('what')">What We Do</div>
+    <div onclick="scrollToSection('portfolio')">Portfolio</div>
+    <div onclick="scrollToSection('contact')">Contact</div>
+  </div>
 
-    <div class="nav-brand" onclick="scrollToSection('thesis')">
-        <img src="logo%20png.png" alt="Arista Legacy Capital" class="logo">
-    </div>
-
-    <div class="nav-links">
-        <div onclick="scrollToSection('thesis')">Thesis</div>
-        <div onclick="scrollToSection('what')">What We Do</div>
-        <div onclick="scrollToSection('portfolio')">Portfolio</div>
-        <div onclick="scrollToSection('contact')">Contact</div>
-    </div>
-
-    <div class="lang-sw">
-    <span onclick="setLanguage('EN')">EN</span>
-    <span>|</span>
-    <span onclick="setLanguage('ID')">ID</span>
+  <div class="lang-sw">
+    <span class="lbtn active" data-lang="en">EN</span>
+    <span class="ldiv">|</span>
+    <span class="lbtn" data-lang="id">ID</span>
+  </div>
 </div>
 
 <!-- SECTION 1 — THESIS -->
