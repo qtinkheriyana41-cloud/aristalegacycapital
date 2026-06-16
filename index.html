@@ -69,13 +69,16 @@ html, body {
   padding: 28px 10vw;
 }
 
-.nav-brand {
-  font-family: 'EB Garamond', Georgia, serif;
-  font-size: 15px;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  color: rgba(255,255,255,0.88);
-  cursor: pointer;
+.nav-brand{
+  display:flex;
+  align-items:center;
+  cursor:pointer;
+}
+
+.nav-brand img{
+  height:42px;
+  width:auto;
+  display:block;
 }
 
 .nav-links {
@@ -326,14 +329,9 @@ body {
 <div class="overlay"></div>
 
 <!-- NAV -->
-<div class="nav">
-  <div class="nav-brand" onclick="scrollToSection('thesis')">Arista Legacy Capital</div>
-  <div class="nav-links">
-    <div onclick="scrollToSection('thesis')">Thesis</div>
-    <div onclick="scrollToSection('what')">What We Do</div>
-    <div onclick="scrollToSection('portfolio')">Portfolio</div>
-    <div onclick="scrollToSection('contact')">Contact</div>
-  </div>
+<div class="nav-brand" onclick="scrollToSection('thesis')">
+  <img src="logo.png" alt="Arista Legacy Capital">
+</div>
 
   <div class="lang-sw">
     <span class="lbtn active" data-lang="en">EN</span>
