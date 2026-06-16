@@ -69,24 +69,20 @@ html, body {
   padding: 28px 10vw;
 }
 
-.nav-brand{
-  display:flex;
-  align-items:center;
-  cursor:pointer;
+.nav-brand {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: rgba(255,255,255,0.88);
+  cursor: pointer;
 }
 
-.nav-brand img{
-    height:85px;
-    width:auto;
-    display:block;
-}
 .nav-links {
   display: flex;
-  gap: 48px;
+  gap: 36px;
 }
-.nav-brand{
-    margin-right:40px;
-}
+
 .nav-links div {
   font-family: 'Inter', sans-serif;
   font-size: 10.5px;
@@ -331,10 +327,7 @@ body {
 
 <!-- NAV -->
 <div class="nav">
-
-  <div class="nav-brand" onclick="scrollToSection('thesis')">
-    <img src="arista%20logo.png" alt="Arista Legacy Capital">
-
+  <div class="nav-brand" onclick="scrollToSection('thesis')">Arista Legacy Capital</div>
   <div class="nav-links">
     <div onclick="scrollToSection('thesis')">Thesis</div>
     <div onclick="scrollToSection('what')">What We Do</div>
@@ -347,7 +340,6 @@ body {
     <span class="ldiv">|</span>
     <span class="lbtn" data-lang="id">ID</span>
   </div>
-
 </div>
 
 <!-- SECTION 1 — THESIS -->
